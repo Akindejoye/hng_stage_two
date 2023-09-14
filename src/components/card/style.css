@@ -1,0 +1,105 @@
+.main__card {
+  width: 250px;
+  background-color: #e4e4e425;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, min-content) 1fr;
+}
+
+.main__card-img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+  width: 100%;
+}
+
+.main__card-likeBox {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: flex-end;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
+  border-radius: 50%;
+  background-color: rgba(240, 255, 255, 0.302);
+
+  z-index: 3;
+}
+
+.like {
+  background-color: red;
+}
+
+.main__card-like {
+  cursor: pointer;
+}
+
+.main__card-time {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #9ca3af;
+  display: block;
+  margin-top: 5px;
+}
+
+.main__card-movieName {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #111827;
+  margin-top: 10px;
+}
+
+.main__card-ratingBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rating__imbdBox {
+  display: flex;
+  align-items: center;
+}
+
+.rating__imbdBox > img {
+  margin-right: 5px;
+}
+
+.rating__imbdBox > span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #111827;
+}
+
+.main__card-appleBox {
+  display: flex;
+  align-items: center;
+}
+
+.main__card-appleBox > img {
+  margin-right: 5px;
+}
+
+.main__card-appleBox > p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #111827;
+}
+
+.main__card-cathegory {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #9ca3af;
+  margin-top: 10px;
+}

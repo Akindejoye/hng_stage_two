@@ -1,0 +1,128 @@
+.sidebar {
+  border-radius: 0px 45px 45px 0px;
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sidebar-top > img {
+  margin-right: 10px;
+}
+
+.sidebar-top > span {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #333333;
+}
+
+.sidebar__navbox {
+  padding-top: 70px;
+}
+
+.sidebar__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-decoration: none;
+  height: 86px;
+}
+
+.sidbar__nav-icon {
+  justify-self: center;
+  align-self: center;
+  margin-right: 10px;
+}
+
+.sidbar__nav-text {
+  align-self: center;
+  margin-left: -30px;
+
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #666;
+}
+
+.toggle__nav {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 24px;
+  padding-left: 19.5px;
+  height: 40px;
+  margin-bottom: 18.5px;
+  transition: 0.3s;
+  background: #f95d44;
+}
+
+.active {
+  background: #be123d36;
+  border-right: 6px solid #BE123C;
+}
+
+.sidebar__quizes {
+  margin: 0 auto;
+  margin-top: 55px;
+  border: 1px solid #BE123C;
+  width: 170px;
+  height: 210px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar__quizes > p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  color: #333333;
+}
+
+.sidebar__quizes > p > span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #666;
+  display: block;
+  padding-top: 10px;
+}
+
+.sidebar__quizes > button {
+  width: 112px;
+  height: 30px;
+  background-color: #be123d3b;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #BE123C;
+  border-radius: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.sidebar__logout {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__logout-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600px;
+  line-height: 30px;
+  color: #666;
+}
