@@ -27,39 +27,58 @@ Follow these steps to get a local copy up and running:
 
 1. Clone this repository to your local machine:
 
-````shell
+```shell
+
 git clone https://github.com/Akindejoye/hng_stage_two.git
+
+```
 
 1. Change into the project directory:
 
 ```shell
+
 cd repo-name
+
+```
 
 2. Install the project dependencies:
 
-  Using npm:
-  ```shell
-  npm install
+Using npm:
 
-  Using Yarn:
-  ```shell
-  yarn
+```shell
 
+npm install
 
-    Usage
-  1.  Start the development server:
-  Using npm:
-  ```shell
-  npm start
+```
 
-  Using Yarn:
-  ```shell
-  yarn start
+Using Yarn:
 
-  2. Open your web browser and navigate to http://localhost:3000 to view the application.
+```shell
 
+yarn
 
- Happy coding!
+```
 
+    ## Usage
 
-````
+1.  Start the development server:
+
+Using npm:
+
+```shell
+
+npm start
+
+```
+
+Using Yarn:
+
+```shell
+
+yarn start
+
+```
+
+2. Open your web browser and navigate to http://localhost:3000 to view the application.
+
+Happy coding!
