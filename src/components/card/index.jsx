@@ -14,6 +14,7 @@ const Card = ({ movie }) => {
         className="main__card-img"
         src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}`}
         alt={movie.title}
+        loading="lazy"
       />
       <figure
         className={likeMovie ? "main__card-likeBox like" : "main__card-likeBox"}
