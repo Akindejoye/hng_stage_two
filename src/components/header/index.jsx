@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Logo from "../../assets/images/tv.svg";
 import Search from "../../assets/images/search.svg";
 import Dash from "../../assets/images/double_dash.svg";
@@ -6,15 +7,31 @@ import Apple from "../../assets/images/apple.svg";
 import Play from "../../assets/images/play.svg";
 import "./style.css";
 
-const Header = () => {
+const Header = ({ onSearchSubmit }) => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onSearchSubmit(searchQuery);
+  };
+
   return (
     <div className="header__box">
       <img src={Logo} alt="Logo" className="header__logo" />
       <h3 className="header__subtitle">MovixBox</h3>
-      <div className="header__search">
-        <input type="text" className="header__search-input" />
+      <form onSubmit={handleSubmit} className="header__search">
+        <input
+          type="text"
+          className="header__search-input"
+          value={searchQuery}
+          onChange={handleInputChange}
+        />
         <img src={Search} alt="Seach icon" className="header__search-icon" />
-      </div>
+      </form>
       <button className="header__singin-button">Sign in</button>
       <div className="header__details-box">
         <img src={Dash} alt="Dash" className="header__details" />
