@@ -24,7 +24,7 @@ const HomePage = () => {
       setLoader(true);
       try {
         if (searchQuery) {
-          const url = `${SEARCH}=${searchQuery}`;
+          const url = `${SEARCH}${searchQuery}`;
           const response = await axios.get(url);
           const data = response.data.results;
           const tenMovies = data?.slice(0, 10);
